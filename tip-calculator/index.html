@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meal Calculator</title>
+	
+	<!-- STYLES -->
+	<link rel="stylesheet" type="text/css" href="_base/styles/bootstrap.min.css"></link>
+	<link rel="stylesheet" type="text/css" href="_base/styles/style.css"></link>
+    
+    <!-- JAVASCRIPT -->
+	<script src="_base/javascripts/jquery.js"></script>
+	<script src="_base/javascripts/bootstrap.min.js"></script>
+	<script src="_base/javascripts/main.js"></script>
+
+</head>
+	
+<body>
+	<div class="container">
+		<h1>Tip Calculator</h1>
+		<form>
+			<!-- Set Tax and Tip -->
+			<fieldset>
+				<legend>Tax & Tip %</legend>
+				<p><label for="tax-percentage">Tax Percentage</label> <input id="tax-percentage" type="text" value="0.0875"/></p>
+				<p><label for="tip-percentage">Tip Percentage</label> <input id="tip-percentage" type="text" value="0.20"/></p>
+			</fieldset>
+			
+			<!-- Set Meal Prices -->
+			<fieldset>
+				<legend>Meal Price</legend>
+				<p><label for="meal-1-price">Meal #1 Price</label> <input id="meal-1-price" type="text" value=""/></p>
+			</fieldset>
+			
+			<!-- Show Calculation Results -->
+			<fieldset>
+				<legend>Meal w/ Tax & Tip</legend>
+				<p><label for="meal-1-total">Meal #1 Total</label> <input id="meal-1-total" type="text"/></p>
+				<p><label for="total">Total</label> <input id="total" type="text"/></p>
+			</fieldset>
+			
+			<div class="button-wrapper">
+				<button id="calculate-button" type="button">Calculate Totals</button>
+			</div>
+		
+		</form>
+	</div>
+</body>
+
+</html>
